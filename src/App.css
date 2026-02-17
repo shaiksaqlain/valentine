@@ -1,0 +1,142 @@
+
+body{
+  margin:0;
+  overflow:hidden;
+  font-family:'Poppins',sans-serif;
+  background:#0b0f2f;
+  color:white;
+}
+
+/* LOADING */
+
+.loading{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  background:linear-gradient(135deg,#1a1f4c,#0b0f2f);
+}
+
+/* STARS */
+
+.stars{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:url("https://www.transparenttextures.com/patterns/stardust.png");
+  animation:moveStars 60s linear infinite;
+  z-index:-2;
+}
+
+@keyframes moveStars{
+  from{background-position:0 0;}
+  to{background-position:10000px 5000px;}
+}
+
+/* HEARTS */
+
+.hearts::before{
+  content:"💖 💕 💗 💘 💝 💓 💞 💖 💕 💗";
+  position:absolute;
+  width:100%;
+  bottom:-50px;
+  font-size:28px;
+  animation:floatHearts 12s linear infinite;
+  opacity:0.7;
+}
+
+@keyframes floatHearts{
+  0%{transform:translateY(0);}
+  100%{transform:translateY(-120vh);}
+}
+
+/* QUESTION */
+
+.container{
+  text-align:center;
+  margin-top:130px;
+}
+
+.typing{
+  font-size:26px;
+  color:#ffd1dc;
+  min-height:40px;
+}
+
+.title{
+  font-size:48px;
+}
+
+.tease{
+  height:30px;
+  margin-top:10px;
+  color:#ff9ed1;
+}
+
+/* BUTTONS */
+
+.btnArea{margin-top:60px;}
+
+button{
+  padding:16px 42px;
+  border:none;
+  border-radius:60px;
+  font-size:22px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.yesBtn{
+  background:linear-gradient(45deg,#ff2e63,#ff6f91);
+  color:white;
+  box-shadow:0 0 20px rgba(255,0,90,.8);
+}
+
+.yesBtn:hover{
+  box-shadow:0 0 40px rgba(255,0,90,1);
+}
+
+.noBtn{
+  background:#333;
+  color:white;
+}
+
+/* FINAL SCREEN */
+
+.surprise{
+  text-align:center;
+}
+
+.bigText{
+  font-size:60px;
+}
+
+.card{
+  background:rgba(255,255,255,.1);
+  backdrop-filter:blur(12px);
+  border-radius:20px;
+  padding:25px;
+  width:340px;
+  margin:auto;
+  margin-top:20px;
+  box-shadow:0 0 40px rgba(255,105,180,.6);
+}
+
+.card img{
+  width:240px;
+  border-radius:15px;
+}
+
+.letter{
+  white-space:pre-line;
+  font-size:18px;
+  margin-top:15px;
+}
+
+.shareBtn{
+  margin-top:20px;
+  background:#25D366;
+  color:white;
+}
+
