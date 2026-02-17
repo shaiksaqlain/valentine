@@ -2,8 +2,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import confetti from "canvas-confetti";
 import "./App.css";
-import loveImg from "./assets/love.jpeg";
-import song from "./assets/music.mp3";
+import loveImg from "./Assets/love.jpeg";
+import song from "./Assets/music.mp3";
 
 export default function App() {
 
